@@ -1,0 +1,12 @@
+@import "../Parametres.scss";
+
+.Galerie {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $grisClair;
+    border-radius: 25px;
+    height: 829px;
+    column-gap: 60px;
+    margin: 36px 0 40px 0;
+    padding: 56px 0 43px 50px;
+}

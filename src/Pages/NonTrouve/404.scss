@@ -1,0 +1,27 @@
+@import '../../Composants/Parametres.scss';
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: $orange;
+    row-gap: 139px;
+}
+h1 {
+    font-size: 288px;
+    font-weight: 700;
+    margin: 140px 0 0 0;
+}
+
+p {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+}
+
+a, a:active, a:visited {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}

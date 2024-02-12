@@ -1,0 +1,21 @@
+.navHorizontale {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .menuNav {
+        display: flex;
+        gap: 57px;
+    }
+
+    .liensNav {
+        font-weight: 500;
+        font-size: 24px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .pageActive {
+        text-decoration: underline;
+    }
+}

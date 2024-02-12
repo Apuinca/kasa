@@ -1,0 +1,23 @@
+@import "../Parametres.scss";
+
+.Vignettes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 340px;
+    height: 340px;
+    font-family: $defaut;
+    color: white;
+    background-color: $orange;
+    border-radius: 10px;
+
+    img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    p {
+        font-weight: 700;
+        font-size: 18px;
+        margin: 0 0 20px 20px;
+    }
+}

@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import { BrowserRouter as Routeur, Routes, Route } from 'react-router-dom';
+import './index.scss';
 import reportWebVitals from './reportWebVitals';
+import APropos from './Pages/APropos/APropos.js';
+import Accueil from './Pages/Accueil/App.js';
+import NonTrouve from './Pages/NonTrouve/404.js'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
+    <React.StrictMode>
+        <Routeur>
+            <Routes>
+                <Route path='/' element={<Accueil />} />
+                <Route path='/APropos' element={<APropos />} />
+                <Route path='*' element={<NonTrouve /> } />
+            </Routes>
+        </Routeur>
   </React.StrictMode>
 );
 

@@ -3,11 +3,14 @@
     "",
     "\\public",
     "\\src",
+    "\\src\\Assets",
+    "\\src\\Composants",
+    "\\src\\Composants\\Carroussel",
+    "\\src\\Composants\\CommunsSite",
+    "\\src\\Composants\\CommunsSite\\ListeDeroulante",
     "\\src\\Pages\\Accueil",
-    "\\src\\Pages\\APropos",
-    "\\src\\Pages\\FichesLogements",
-    "\\src\\Pages\\NonTrouve"
+    "\\src\\Pages\\Logements"
   ],
-  "SelectedNode": "\\public\\robots.txt",
+  "SelectedNode": "\\src\\Composants\\Carroussel\\Carroussel.scss",
   "PreviewInSolutionExplorer": false
 }

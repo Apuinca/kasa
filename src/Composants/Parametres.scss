@@ -4,4 +4,17 @@ $orange : #FF6060;
 $largeurMain : 1240;
 
 // Polices
-$defaut: 'Montserrat', sans-serif;
+$policeDefaut: 'Montserrat', sans-serif;
+
+//  Galerie
+$margeHaute: 56;
+$margeBasse: 43;
+$hauteurGalerie: (829 - $margeHaute - $margeBasse) + px;
+
+// Pied de page
+$margeBassePiedPage: 29;
+$hauteurPiedPage: (209 - $margeBassePiedPage) + px;
+
+//  Combobox
+$paddingCB: 0 20px 0 10px;
+$largeurCB: 589px;

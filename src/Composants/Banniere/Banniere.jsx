@@ -1,10 +1,10 @@
 import './Banniere.scss';
 
 function Banniere({ image, altImage, texte }) {
-    return (<div className="Banniere">
+    return (<section className="Banniere">
         <img src={image} alt={altImage} />
         <div className="TexteBanniere">{texte}</div>
-    </div>);
+    </section>);
 }
 
 export default Banniere;

@@ -1,9 +1,9 @@
 import './Vignettes.scss';
 
-function Vignettes({ imageVignette, titreVignette, key }) {
+function Vignettes({ imageVignette, titreVignette }) {
     return (
         <div className="Vignettes">
-            <img src={imageVignette} alt="vignette" id={key} />
+            <img src={imageVignette} alt="vignette" />
             <p>{titreVignette}</p>
         </div >
     );

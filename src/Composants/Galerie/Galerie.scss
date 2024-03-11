@@ -5,8 +5,9 @@
     flex-wrap: wrap;
     background-color: $grisClair;
     border-radius: 25px;
-    height: 829px;
-    column-gap: 60px;
+    height: $hauteurGalerie;
+    gap: 50px 60px;
     margin: 36px 0 40px 0;
-    padding: 56px 0 43px 50px;
+    padding: $margeHaute + px 0 $margeBasse + px 50px;
+    overflow: scroll;
 }

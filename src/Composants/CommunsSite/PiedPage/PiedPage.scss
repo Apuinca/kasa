@@ -1,0 +1,16 @@
+@import '../../parametres.scss';
+
+.PiedPages {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: black;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    width: $largeurMain + px;
+    height: $hauteurPiedPage;
+    gap: 29px;
+    padding-bottom: $margeBassePiedPage + px;
+}

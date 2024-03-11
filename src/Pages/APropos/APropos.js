@@ -1,14 +1,20 @@
 import * as React from 'react';
 
-import Entete from '../../Composants/Entete/Entete.jsx';
+import Entete from '../../Composants/CommunsSite/Entete/Entete.jsx';
+import OptionNavigation from '../../Composants/CommunsSite/OptionNavigation/OptionNavigation.jsx';
 import Conteneur from '../../Composants/Conteneur/Conteneur.jsx';
-import PiedPage from '../../Composants/PiedPage/PiedPage.jsx'
+import PiedPage from '../../Composants/CommunsSite/PiedPage/PiedPage.jsx'
 import Banniere from '../../Composants/Banniere/Banniere.jsx';
 
 function APropos() {
     return (
         <React.Fragment>
-            <header><Entete /></header>
+            <header>
+                <Entete>
+                    < OptionNavigation HRef="/" Libelle="Accueil" />
+                    < OptionNavigation HRef="/APropos" Libelle="A propos" Actif="active" />
+                </Entete>
+            </header>
             <main>
                 <Conteneur>
                     <Banniere />

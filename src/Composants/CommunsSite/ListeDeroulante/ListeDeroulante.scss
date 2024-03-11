@@ -1,0 +1,85 @@
+@import "../../Parametres.scss";
+
+@keyframes cbOuvrir {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(-180deg);
+    }
+}
+
+@keyframes cbFermer {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.comboBox {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    width: 582px;
+    position: relative;
+    border: 2px black solid;
+}
+
+.controlListe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $orange;
+    color: white;
+    border-radius: 5px;    
+    width: 100%;
+    border: 2px blue solid;
+
+    & p {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 10px;
+    }
+}
+
+.contenuListe {
+    width: 100%;
+    border: 2px red solid;
+
+    & p {
+        font-size: 18px;
+        font-weight: 400;
+        background-color: $grisClair;        
+        color: black;
+        border: 2px green solid;
+    }
+}
+
+.combo {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    padding: $paddingCB;
+
+    &:active {
+        animation: cbOuvrir 300ms ease-out both;
+    }
+}
+
+.comboOuverte {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    padding: $paddingCB;
+
+    &:active {
+        animation: cbFermer 300ms ease-out both;
+    }
+}

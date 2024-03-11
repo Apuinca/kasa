@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import './404.scss';
-import Entete from '../../Composants/Entete/Entete';
-import PiedPage from '../../Composants/PiedPage/PiedPage';
+import Entete from '../../Composants/CommunsSite/Entete/Entete';
+import PiedPage from '../../Composants/CommunsSite/PiedPage/PiedPage';
 
 function NonTrouve() {
     return (

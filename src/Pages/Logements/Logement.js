@@ -51,7 +51,7 @@ export function Logements() {
                     </section>
                     <section className="detail">
                         <ListeDeroulante libelle="Description" contenu={desc} />
-                        <ListeDeroulante libelle="Equipement" contenu={equipe} mode="liste" />
+                        <ListeDeroulante libelle="Equipement" contenu={equipe} mode="ul" />
                     </section>           
                 </Conteneur>
             </main>

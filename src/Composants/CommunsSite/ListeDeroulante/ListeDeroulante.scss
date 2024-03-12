@@ -27,10 +27,9 @@
     align-items: center;
     width: 582px;
     position: relative;
-    border: 2px black solid;
 }
 
-.controlListe {
+.controleListe {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,9 +37,9 @@
     color: white;
     border-radius: 5px;    
     width: 100%;
-    border: 2px blue solid;
+    z-index: 1;
 
-    & p {
+    & p, & li {
         display: flex;
         align-items: center;
         font-size: 18px;
@@ -51,14 +50,22 @@
 
 .contenuListe {
     width: 100%;
-    border: 2px red solid;
+    position: relative;
+    top: -100%;
+    opacity: 0;
+    z-index: 0;
+    
+    &.ouvert {
+        top: 100%;
+        opacity: 1;
+        z-index: 1;
+        background-color: $grisClair;
+    }
 
     & p {
         font-size: 18px;
-        font-weight: 400;
-        background-color: $grisClair;        
+        font-weight: 400;                
         color: black;
-        border: 2px green solid;
     }
 }
 

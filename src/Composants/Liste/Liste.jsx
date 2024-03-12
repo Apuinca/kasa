@@ -1,14 +1,20 @@
 import * as React from "react";
 
+import "./Liste.scss";
+
 export function Liste({ type, children }) {
-    console.log("dans Liste\r\ntype = " + type);
+
     console.dir({ children });
-    if ({ type } === "ul") {
+    if (type == "ul") {
+        console.log("dans Liste\r\ntype = " + type);
+
         return (<ul>
             {children}
         </ul>)
     }
     else {
+        console.log("dans Liste\r\ntype = " + type);
+
         return (
             <ol>
                 {children}

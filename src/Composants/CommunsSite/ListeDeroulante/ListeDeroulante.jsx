@@ -1,4 +1,4 @@
-import { useState, Fragment } from "react";
+import { useState } from "react";
 
 import './ListeDeroulante.scss'
 
@@ -6,11 +6,13 @@ import Combo from '../../../Assets/FlecheCombo.png';
 import ComboOuverte from '../../../Assets/FlecheComboOuverte.png';
 import Liste from "../../Liste/Liste.jsx";
 
-export function ListeDeroulante({ libelle, contenu, mode = "texte" }) {
+export function ListeDeroulante({ libelle, contenu, mode = "texte", grande = "" }) {
     const [ouvert, etat] = useState(false);
 
+    const tailleCombo = grande == "" ? "comboBox" : "comboBox grande";
+
     return (
-        <article className="comboBox">
+        <article className={tailleCombo} >
             <div className="controleListe">
                 <p>{libelle}</p>
                 {
@@ -28,8 +30,6 @@ export function ListeDeroulante({ libelle, contenu, mode = "texte" }) {
 
 function ContenuCombo({ mode, contenu }) {
     const lignesContenu = Array.from(contenu);
-
-    console.log("mode = " + mode);
 
     if (mode === "texte") {
         return (<p>{contenu}</p>)

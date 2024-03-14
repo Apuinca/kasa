@@ -5,7 +5,7 @@ export function Hebergeur({ nomHebergeur, iconeProfil }) {
     return (
         <div className="Hebergeur">
             <p>{nomHebergeur}</p>
-            <img src={iconeProfil} alt="icone hébergeur" />
+            <img src={iconeProfil} alt="icone h&eacute;bergeur" />
         </div>
     );
 }

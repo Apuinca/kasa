@@ -1,5 +1,6 @@
 @import "../../Parametres.scss";
 
+
 @keyframes cbOuvrir {
     from {
         transform: rotate(0);
@@ -27,6 +28,10 @@
     align-items: center;
     width: 582px;
     position: relative;
+
+    &.grande {
+        width: 100%;
+    }
 }
 
 .controleListe {
@@ -66,6 +71,7 @@
         font-size: 18px;
         font-weight: 400;                
         color: black;
+        padding: 20px;
     }
 }
 

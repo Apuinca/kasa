@@ -2,21 +2,25 @@ import * as React from 'react';
 import './Logement.scss';
 
 import { useParams, Navigate } from 'react-router-dom';
-import Entete from '../../Composants/CommunsSite/Entete/Entete.jsx';
 import Conteneur from '../../Composants/Conteneur/Conteneur.jsx';
-import PiedPage from '../../Composants/CommunsSite/PiedPage/PiedPage.jsx';
 import Hebergeur from '../../Composants/Hebergeur/Hebergeur.jsx';
 import Carroussel from '../../Composants/Carroussel/Carroussel.jsx';
 import ListeDeroulante from '../../Composants/CommunsSite/ListeDeroulante/ListeDeroulante.jsx';
 import Titre from '../../Composants/Titre/Titre.jsx';
 import Lieu from '../../Composants/Lieu/Lieu.jsx';
 import MotsClefs from '../../Composants/MotsClefs/MotsClefs.jsx';
+import Entete from '../../Composants/CommunsSite/Entete/Entete.jsx';
+import OptionNavigation from '../../Composants/CommunsSite/OptionNavigation/OptionNavigation.jsx';
 
 import logets from '../../logements.json';
 
 export function Logements() {
     let { id } = useParams();
     let logement = logets.find((logets) => (logets.id === `${id}`));
+
+    React.useEffect(() => {
+        document.title = "Kasa - logement (" + logement.location + ")";
+    });
 
     if (!logement) {
         return (<Navigate to="/erreur" replace={true} />)
@@ -31,11 +35,16 @@ export function Logements() {
     const equipe = logement.equipments;
     const mcs = logement.tags;
 
-    console.log("profil : " + profil);
+    
 
     return (
         <React.Fragment>
-            <header><Entete /></header>
+            <header>
+                <Entete>
+                    < OptionNavigation HRef="/" Libelle="Accueil" />
+                    < OptionNavigation HRef="/APropos" Libelle="A propos" />
+                </Entete>
+            </header>
             <main>
                 <Conteneur>                                        
                     <Carroussel photoLogement={apercus} />
@@ -55,7 +64,6 @@ export function Logements() {
                     </section>           
                 </Conteneur>
             </main>
-            <footer><PiedPage /></footer>
         </React.Fragment>
     );
 }

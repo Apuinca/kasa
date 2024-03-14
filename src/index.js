@@ -3,12 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import reportWebVitals from './reportWebVitals';
 import Routage from './Composants/Routeur/Routeur.js'
+import PiedPage from './Composants/CommunsSite/PiedPage/PiedPage.jsx'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <React.StrictMode>
+
+    <React.StrictMode>        
         <Routage />
+        <footer><PiedPage /></footer>
     </React.StrictMode>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,0 +1,9 @@
+.scoreLogement {
+    display: flex;
+    justify-content: space-between;
+
+    & img {
+        width: 36px;
+        height: 36px;
+    }
+}

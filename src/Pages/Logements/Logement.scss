@@ -13,6 +13,12 @@ main {
     }
 }
 
+.sectionStats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .stats {
     display: flex;
     justify-content: flex-start;

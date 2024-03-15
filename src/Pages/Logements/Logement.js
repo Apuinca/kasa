@@ -11,8 +11,10 @@ import Lieu from '../../Composants/Lieu/Lieu.jsx';
 import MotsClefs from '../../Composants/MotsClefs/MotsClefs.jsx';
 import Entete from '../../Composants/CommunsSite/Entete/Entete.jsx';
 import OptionNavigation from '../../Composants/CommunsSite/OptionNavigation/OptionNavigation.jsx';
+import Scores from '../../Composants/Score/Score';
 
 import logets from '../../logements.json';
+
 
 export function Logements() {
     let { id } = useParams();
@@ -34,8 +36,7 @@ export function Logements() {
     const desc = logement.description;
     const equipe = logement.equipments;
     const mcs = logement.tags;
-
-    
+    const note = logement.rating;
 
     return (
         <React.Fragment>
@@ -55,8 +56,11 @@ export function Logements() {
                         </div>
                         <Hebergeur nomHebergeur={nom} iconeProfil={profil} />
                     </section>
-                    <section className="stats" id="stats">
-                        {mcs.map((mc, idx) => (<MotsClefs texte={mc} key={idx} />))}
+                    <section className="sectionStats">
+                        <div className="stats" id="stats">
+                            {mcs.map((mc, idx) => (<MotsClefs texte={mc} key={idx} />))}
+                        </div>
+                        <Scores nbEtoiles={note} />
                     </section>
                     <section className="detail">
                         <ListeDeroulante libelle="Description" contenu={desc} />

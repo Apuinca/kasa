@@ -20,4 +20,16 @@
         font-size: 18px;
         margin: 0 0 20px 20px;
     }
+
+    @media (max-width: 769px) {
+        height: 255px;
+        width: 335px;
+
+        p {
+            margin: 5px 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
 }

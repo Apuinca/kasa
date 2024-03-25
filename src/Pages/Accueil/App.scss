@@ -6,9 +6,30 @@
     padding: 45px 100px 0 100px;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    row-gap: 50px;
+
+    @media (max-width: 769px) {
+        padding: 0;
+    }
+}
+
+body {
+    @media (max-width: 769px) {
+        margin: 0;
+    }
 }
 
 header, main, footer {
-    width: $largeurMain  + px;
+    width: $largeurMain + px;
 }
+
+header, main {
+    @media (max-width: 769px) {
+        width: 335px;
+    }
+}
+ footer {
+     @media (max-width: 769px) {
+         width: 100%;
+     }     
+ }

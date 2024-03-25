@@ -5,5 +5,10 @@
     & img {
         width: 36px;
         height: 36px;
+
+        @media (max-width: 769px) {            
+            width: 18px;
+            height: 18px;
+        }
     }
 }

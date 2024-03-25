@@ -47,25 +47,27 @@ export function Logements() {
                 </Entete>
             </header>
             <main>
-                <Conteneur>                                        
+                <Conteneur>
                     <Carroussel photoLogement={apercus} />
-                    <section className="identification">
-                        <div className="titreLieu">
-                            <Titre texteTitre={titre} />
-                            <Lieu lieu={lieu} />
-                        </div>
-                        <Hebergeur nomHebergeur={nom} iconeProfil={profil} />
-                    </section>
-                    <section className="sectionStats">
-                        <div className="stats" id="stats">
-                            {mcs.map((mc, idx) => (<MotsClefs texte={mc} key={idx} />))}
-                        </div>
-                        <Scores nbEtoiles={note} />
+                    <section className="donneesIdent">
+                        <article className="identification">
+                            <div className="titreLieu">
+                                <Titre texteTitre={titre} />
+                                <Lieu lieu={lieu} />
+                            </div>
+                            <div className="stats" id="stats">
+                                {mcs.map((mc, idx) => (<MotsClefs texte={mc} key={idx} />))}
+                            </div>
+                        </article>
+                        <article className="sectionStats">
+                            <Hebergeur nomHebergeur={nom} iconeProfil={profil} />
+                            <Scores nbEtoiles={note} />
+                        </article>
                     </section>
                     <section className="detail">
                         <ListeDeroulante libelle="Description" contenu={desc} />
                         <ListeDeroulante libelle="Equipement" contenu={equipe} mode="ul" />
-                    </section>           
+                    </section>
                 </Conteneur>
             </main>
         </React.Fragment>

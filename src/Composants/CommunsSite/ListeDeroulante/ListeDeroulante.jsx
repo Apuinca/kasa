@@ -2,14 +2,14 @@ import { useState } from "react";
 
 import './ListeDeroulante.scss'
 
-import Combo from '../../../Assets/FlecheCombo.png';
-import ComboOuverte from '../../../Assets/FlecheComboOuverte.png';
+import Combo from '../../../Assets/FlecheComboOuverte.png';
+import ComboOuverte from '../../../Assets/FlecheCombo.png';
 import Liste from "../../Liste/Liste.jsx";
 
 export function ListeDeroulante({ libelle, contenu, mode = "texte", grande = "" }) {
     const [ouvert, etat] = useState(false);
 
-    const tailleCombo = grande == "" ? "comboBox" : "comboBox grande";
+    const tailleCombo = grande === "" ? "comboBox" : "comboBox grande";
 
     return (
         <article className={tailleCombo} >

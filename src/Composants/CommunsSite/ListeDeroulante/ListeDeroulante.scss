@@ -32,6 +32,10 @@
     &.grande {
         width: 100%;
     }
+
+    @media (max-width: 769px) {
+        width: 100%;
+    }
 }
 
 .controleListe {
@@ -44,12 +48,18 @@
     width: 100%;
     z-index: 1;
 
-    & p, & li {
+    & p {
         display: flex;
         align-items: center;
         font-size: 18px;
         font-weight: 700;
         padding: 10px;
+    }
+
+    @media (max-width: 769px) {
+        & p {
+            font-size: 13px;
+        }
     }
 }
 
@@ -67,15 +77,27 @@
         background-color: $grisClair;
     }
 
-    & p {
+    & p, & li {
         font-size: 18px;
         font-weight: 400;                
         color: black;
         padding: 20px;
+
+        @media (max-width: 769px) {
+            font-size: 12px;
+        }
+    }
+
+    & li {
+        padding: 0 0 0 20px;
+
+        @media (max-width: 769px) {
+            padding: 0;
+        }
     }
 }
 
-.combo {
+.combo, .comboOuverte {
     cursor: pointer;
     width: 32px;
     height: 32px;
@@ -84,14 +106,15 @@
     &:active {
         animation: cbOuvrir 300ms ease-out both;
     }
+
+    @media (max-width: 769px) {
+        padding: $paddingCBMob;
+        width: 16px;
+        height: 9.14px;
+    }
 }
 
 .comboOuverte {
-    cursor: pointer;
-    width: 32px;
-    height: 32px;
-    padding: $paddingCB;
-
     &:active {
         animation: cbFermer 300ms ease-out both;
     }

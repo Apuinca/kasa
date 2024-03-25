@@ -34,4 +34,17 @@
             opacity: 0.45;
         }
     }
+
+    @media (max-width: 769px) {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 335px;
+        height: 111px;
+        font-size: 24px;
+
+        .TexteBanniere {
+            padding-left: 16px;
+            width: 225px;
+        }
+    }
 }

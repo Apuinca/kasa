@@ -18,11 +18,11 @@ function Resultat(EtoilesScore) {
     let i = 0;
 
     for (i; i < EtoilesScore; i++) {
-        tabEtoiles.push(<img src={etoileOK} alt='&egrave;toile {$i} sur {$EtoilesScore}' />);
+        tabEtoiles.push(<img src={etoileOK} alt='&egrave;toile {$i} sur {$EtoilesScore}' key={i} />);
         }
 
     for (i; i < nbEtoileMax; i++) {
-        tabEtoiles.push(<img src={etoileKO} alt="&egrave;toile inactive" />);
+        tabEtoiles.push(<img src={etoileKO} alt="&egrave;toile inactive" key={i} />);
     }
 
     return tabEtoiles;

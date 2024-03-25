@@ -2,27 +2,49 @@ main {
     height: 100%;
 }
 
-.identification {
+.donneesIdent {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+
+    @media (max-width: 769px) {
+        flex-direction: column;
+    }
+}
+
+.identification {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    row-gap: 20px;
 
     & .titreLieu {
         display: flex;
         flex-direction: column;
+        row-gap: 5px;
+    }
+
+    @media (max-width: 769px) {
+
     }
 }
 
 .sectionStats {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    row-gap: 20px;
+
+    @media (max-width: 769px) {
+        flex-direction: row-reverse;
+    }
 }
 
 .stats {
     display: flex;
     justify-content: flex-start;
-    column-gap: 10px
+    column-gap: 10px;        
 }
 
 .detail {
@@ -30,4 +52,9 @@ main {
     justify-content: space-between;
     align-items: flex-start;
     border-radius: 10px 10px 5px 5px;
+
+    @media (max-width: 769px) {
+        flex-direction: column;
+        row-gap: 20px;
+    }
 }

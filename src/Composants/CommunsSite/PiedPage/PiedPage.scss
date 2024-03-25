@@ -7,10 +7,26 @@
     align-items: center;
     background: black;
     color: white;
-    font-size: 24px;
-    font-weight: 500;
-    width: $largeurMain + px;
     height: $hauteurPiedPage;
     gap: 29px;
     padding-bottom: $margeBassePiedPage + px;
+
+    & p {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    @media (max-width: 769px) {
+        justify-content: center;
+        font-size: 12px;
+        height: 209px;
+
+        & p {
+            font-size: 12px;
+        }
+
+        & img {
+            height: 39.44px;
+        }
+    }
 }

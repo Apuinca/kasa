@@ -3,4 +3,8 @@
 .lieu {
     color: black;
     font-size: 18px;
+
+    @media (max-width: 769px) {
+        font-size: 14px;
+    }
 }

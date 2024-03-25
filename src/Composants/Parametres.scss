@@ -1,6 +1,7 @@
 //  Couleurs
 $grisClair : #F6F6F6;
 $orange : #FF6060;
+
 $largeurMain : 1240;
 
 // Polices
@@ -11,10 +12,13 @@ $margeHaute: 56;
 $margeBasse: 43;
 $hauteurGalerie: (829 - $margeHaute - $margeBasse) + px;
 
-// Pied de page
+//  Pied de page
 $margeBassePiedPage: 29;
 $hauteurPiedPage: (209 - $margeBassePiedPage) + px;
 
 //  Combobox
-$paddingCB: 0 20px 0 10px;
+$droiteCB: 20px;
+$gaucheCB: 10px;
+$paddingCB: 0 $droiteCB 0 $gaucheCB;
+$paddingCBMob: 0 calc($droiteCB / 2) 0 calc($gaucheCB / 2);
 $largeurCB: 589px;

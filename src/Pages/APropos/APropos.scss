@@ -4,4 +4,8 @@
     justify-content: space-between;
     row-gap: 30px;
     padding: 0 110px;
+
+    @media (max-width: 769px) {
+        padding: 0;
+    }
 }

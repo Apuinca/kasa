@@ -3,10 +3,10 @@ import './PiedPage.scss';
 
 function PiedPage() {
     return (
-        <section className="PiedPages">
+        <footer className="PiedPages">
             <img src={logoPiedPage} alt="pied de page" />
             <p>&copy; 2020 Kasa. All rights reserved</p>
-        </section>);
+        </footer>);
 }
 
 export default PiedPage;

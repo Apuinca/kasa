@@ -11,6 +11,12 @@
     width: 100%;
     min-height: 470px;
     position: relative;
+
+    @media (max-width: 769px) {
+        width: 335px;
+        height: 255px;
+        min-height: 0;
+    }
 }
 
 .carroussel-img {
@@ -26,6 +32,11 @@
     position: absolute;
     cursor: pointer;
 
+    @media (max-width: 769px) {
+        width: 24px;
+        height: 24px;
+    }
+    
     &.prec {
         left: 10px;
     }
@@ -41,4 +52,8 @@
     display: flex;
     color: white;
     font-size: 18px;
+
+    @media (max-width: 769px) {
+        display: none;
+    }
 }

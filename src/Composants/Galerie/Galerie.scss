@@ -10,4 +10,18 @@
     margin: 36px 0 40px 0;
     padding: $margeHaute + px 0 $margeBasse + px 50px;
     overflow: scroll;
+
+    & > a {
+        text-decoration: none;
+    }
+
+    @media (max-width: 769px) {
+        flex-direction: column;
+        height: 805px;
+        row-gap: 20px;
+        padding: 0;
+        background-color: white;
+        margin: 0;
+        border-radius: 10px;
+    }
 }

@@ -10,7 +10,7 @@ root.render(
 
     <React.StrictMode>        
         <Routage />
-        <footer><PiedPage /></footer>
+        <PiedPage />
     </React.StrictMode>
 
 );
